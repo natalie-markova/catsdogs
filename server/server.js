@@ -5,7 +5,7 @@ const animalsRouter = require("./animals.router/animals.router");
 
 const app = express();
 serverConfig(app);
-
+app.use(cors());
 const PORT = 5001;
 const HOST = process.env.HOST || '0.0.0.0'; 
 
