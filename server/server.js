@@ -7,6 +7,8 @@ const app = express();
 serverConfig(app);
 
 const PORT = process.env.PORT || 6001;
+const HOST = process.env.HOST || '0.0.0.0'; 
+
 app.get("/api/status", (_, res) => {
     res.json({ message: 'ok' })
 });
